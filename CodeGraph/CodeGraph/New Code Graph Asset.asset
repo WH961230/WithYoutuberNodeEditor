@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c497004cd486014899f2204f574820a, type: 3}
+  m_Name: New Code Graph Asset
+  m_EditorClassIdentifier: 
+  m_nodes:
+  - rid: 6870438703808643077
+  - rid: 6870438703808643078
+  - rid: 6870438703808643079
+  m_connections:
+  - inputPort:
+      nodeId: af8a7c61-1bba-4b44-aafd-c0007f969d8b
+      portIndex: 0
+    outputPort:
+      nodeId: ac19bc29-8dab-4921-85a9-424146d8bf37
+      portIndex: 0
+  - inputPort:
+      nodeId: ac19bc29-8dab-4921-85a9-424146d8bf37
+      portIndex: 1
+    outputPort:
+      nodeId: 37518174-a556-404a-9168-4b17eab90cd5
+      portIndex: 0
+  gameObject: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6870438703808643077
+      type: {class: StartNode, ns: , asm: evoreek.lazypan}
+      data:
+        m_guid: 37518174-a556-404a-9168-4b17eab90cd5
+        m_position:
+          serializedVersion: 2
+          x: 140
+          y: 73
+          width: 74
+          height: 77
+        typeName: StartNode, evoreek.lazypan, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    - rid: 6870438703808643078
+      type: {class: DebugLogNode, ns: , asm: evoreek.lazypan}
+      data:
+        m_guid: ac19bc29-8dab-4921-85a9-424146d8bf37
+        m_position:
+          serializedVersion: 2
+          x: 286
+          y: 73
+          width: 222
+          height: 97
+        typeName: DebugLogNode, evoreek.lazypan, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        logMessage: Move the cube
+    - rid: 6870438703808643079
+      type: {class: MoveNode, ns: , asm: evoreek.lazypan}
+      data:
+        m_guid: af8a7c61-1bba-4b44-aafd-c0007f969d8b
+        m_position:
+          serializedVersion: 2
+          x: 582
+          y: 73
+          width: 235
+          height: 97
+        typeName: MoveNode, evoreek.lazypan, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        direction: {x: 0, y: 5, z: 0}
